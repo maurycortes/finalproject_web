@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> The Jammer </title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/calculator.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body id="calculator_body">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img class="navbar-brand" id="logo_image" src="img/marke-logo.png">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Marke</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"> <span id="slogan"> The best engineering </span> </a>
+						</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="homepage.html">Home</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="models.html">Models</a>
+							</li>
+							<li class="nav-item active" id="menuOption">
+								<a class="nav-link" href="calculator.html">Calculator</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="contact.html">Information</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="profile.html">My Profile</a>
+							</li>
+							<form class="form-inline my-2 my-lg-0">
+								<button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="signout_button" formaction="index.html"><i class="fas fa-sign-out-alt"></i></button>
+							</form>
+						</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="calculator_section">
+					<div class="form-group mb-3 col-md-12">
+						<h4> Calculator </h4>
+						<div id="filter_data_content">
+
+
+
+							<div class="form-row">
+								<!--Choose model-->
+								<div class="form-group mb-2 col-md-4">
+									<label for="choose_model">Choose your model:</label>
+									<br>
+									<div class="custom-control custom-radio custom-control-inline">
+									  <input type="radio" class="custom-control-input" id="choose_X1" name="model" value="X1">
+									  <label class="custom-control-label" for="choose_X1">X1</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+									  <input type="radio" class="custom-control-input" id="choose_X2" name="model" value="X2">
+									  <label class="custom-control-label" for="choose_X2">X2</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" id="choose_X3" name="model" value="X3">
+										<label class="custom-control-label" for="choose_X3">X3</label>
+									</div>
+									<br>
+								</div>
+
+								<!--Choose financing term-->
+								<div class="form-group mb-2 col-md-4">
+									<label for="choose_financing_time">Choose your financing time (in months):</label>
+									<br>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" id="choose_12months" name="financing_time" value="12months">
+										<label class="custom-control-label" for="choose_12months">12</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" id="choose_24months" name="financing_time" value="24months">
+										<label class="custom-control-label" for="choose_24months">24</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" class="custom-control-input" id="choose_48months" name="financing_time" value="48months">
+										<label class="custom-control-label" for="choose_48months">48</label>
+									</div>
+									<br>
+								</div>
+
+								<!--Choose the initial payment-->
+								<div class="form-group col-md-4">
+									<label for="choose_initial_payment">Initial payment: <span id="display_initial_payment"></span></label>
+									<div class="slidecontainer">
+									  <input type="range" min="10" max="50" value="10" class="slider" step="10" id="choose_initial_payment">
+									</div>
+									<!--Script to display the live percentage-->
+									<script>
+										var slider = document.getElementById("choose_initial_payment");
+										var output = document.getElementById("display_initial_payment");
+										output.innerHTML = slider.value;
+										output.innerHTML += "%";
+										slider.oninput = function() {
+										  output.innerHTML = this.value;
+											output.innerHTML += "%";
+										}
+									</script>
+								</div>
+							</div>
+
+
+
+							<div class="form-row">
+								<!--Choose motor-->
+								<div class="form-group col-md-4">
+									<label for="choose_motor">Motor:</label>
+									<select class="form-control" id="choose_motor">
+										<option value="motor1"> V4 2.0L </option>
+										<option value="motor2"> V6 2.0L </option>
+										<option value="motor3"> V6 2.5L </option>
+										<option value="motor4"> V8 3.5L Turbo </option>
+									</select>
+								</div>
+
+								<!--Choose seats-->
+								<div class="form-group col-md-4">
+									<label for="choose_seats_material">Seats material:</label>
+									<select class="form-control" id="choose_seats_material">
+										<option value="seats1"> Fabric </option>
+										<option value="seats2"> Leather </option>
+										<option value="seats3"> Customized Leather </option>
+									</select>
+								</div>
+
+								<!--Choose wheels size-->
+								<div class="form-group col-md-4">
+									<label for="choose_wheels">Wheels size:</label>
+									<select class="form-control" id="choose_wheels">
+										<option value="wheels1"> 17" </option>
+										<option value="wheels2"> 18" </option>
+										<option value="wheels3"> 20" </option>
+									</select>
+								</div>
+							</div>
+							<br>
+
+
+
+							<div class="form-row">
+								<!--Choose sound-->
+								<div class="form-group col-md-4">
+									<label for="choose_sound">Sound:</label>
+									<select class="form-control" id="choose_sound">
+										<option value="sound1"> Sony Max Sound </option>
+										<option value="sound2"> Bose M1 </option>
+										<option value="sound3"> Bose M2 Premier </option>
+										<option value="sound4"> Beats Surround Ultra 2019 </option>
+									</select>
+								</div>
+
+								<!--Choose smart options-->
+									<div class="form-group col-md-4">
+										<label for="choose_options">Smart options:</label>
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="choose_parking_sensors">
+											<label class="form-check-label" for="choose_parking_sensors">Parking Sensors</label>
+											<br>
+											<input type="checkbox" class="form-check-input" id="choose_personal_assistant">
+											<label class="form-check-label" for="choose_personal_assistant">Personal Assistant</label>
+											<br>
+											<input type="checkbox" class="form-check-input" id="choose_automatic_parking">
+											<label class="form-check-label" for="choose_automatic_parking">Automatic Parking</label>
+											<br>
+										</div>
+									</div>
+
+									<!--Choose technology options-->
+									<div class="form-group col-md-4">
+										<label for="choose_options">Other technology options:</label>
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="choose_bluetooth">
+											<label class="form-check-label" for="choose_bluetooth">Bluetooth</label>
+											<br>
+											<input type="checkbox" class="form-check-input" id="choose_automatic_windows">
+											<label class="form-check-label" for="choose_automatic_windows">Automatic Windows</label>
+											<br>
+											<input type="checkbox" class="form-check-input" id="choose_gps">
+											<label class="form-check-label" for="choose_gps">GPS</label>
+											<br>
+										</div>
+									</div>
+							</div>
+							<br>
+
+
+							<!--Get plan button-->
+							<button class="btn btn-outline-primary" id="get_plan_button">Get my plan!</button>
+
+						</div>
+					</div>
+					<hr>
+				<div class="form-group mb-3 col-md-12">
+					<h4 id="pricing_summary_title"></h4>
+					<div class="list-payment-summary" id="list-payment-summary">
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

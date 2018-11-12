@@ -1,0 +1,297 @@
+
+/* GENERAL STYLES */
+
+#logo_image {
+	height: 40px;
+	width: 60px;
+}
+
+/* BACKGROUNDS */
+
+#body_background {
+	background:#A4A4A4;
+}
+
+#index_body {
+	background-image: url("../img/index-background.jpg");
+	background-color: #cccccc;
+	background-size: 1950px 700px;
+}
+
+#login_body {
+	background-image: url("../img/login-background.jpg");
+	background-color: #cccccc;
+	background-size: 1450px 660px;
+}
+
+#calculator_body {
+	background-image: url("../img/calculator-background.jpg");
+	background-color: #cccccc;
+	background-size: 1450px 660px;
+}
+
+#models_body {
+	background:#cccccc;
+}
+
+#profile_body {
+	background-image: url("../img/profile-background.jpg");
+	background-color: #cccccc;
+	background-size: 1370px 680px;
+}
+
+#contact_body {
+	background-image: url("../img/contact-background.jpg");
+	background-color: #cccccc;
+	background-size: 1450px 660px;
+}
+
+
+/* MENU NAVBAR */
+
+#slogan {
+	color:gray;
+	font-size:12px;
+	padding-right: 380px;
+}
+
+.menu
+{
+	height:40px;
+	float:left;
+	width:20%;
+	text-align:center;
+}
+.menu p{
+	line-height:40px;
+}
+.menu img
+{
+	max-width:100px;
+	height:40px;
+}
+
+#registration_button {
+	margin: 10px;
+	border-radius: 0px;
+}
+
+#signout_button {
+	margin: 10px;
+	border-radius: 0px;
+	position: absolute;
+	right:    0;
+}
+
+/* INPUT VALIDATION */
+
+.err_msg {
+	visibility: hidden;
+	font-size: 11px;
+	color: red;
+}
+
+.validation_err_msg {
+	visibility: hidden;
+	font-size: 11px;
+	color: #FF751A;
+	position: absolute;
+	right: 0;
+	padding-right: 15px;
+	padding-top: 6px;
+}
+
+
+
+/* LOGIN STYLES */
+
+#login {
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+	height: auto;
+	width: 320px;
+	background-color: #FFFFFF;
+	color: 000000;
+}
+
+#login_username, #login_password, #login_button {
+	border-radius: 0px;
+}
+
+
+/* REGISTRATION STYLES */
+
+#registration {
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+	height: auto;
+	width: 650px;
+	background-color: #FFFFFF;
+	color: 000000;
+}
+
+#register_first_name, #register_last_name, #register_username, #register_email,
+#register_password, #register_confirm_password, #register_country, #register_button {
+	border-radius: 0px;
+}
+
+/* HOMEPAGE STYLES */
+
+#homepage_section, #models_section {
+	background-color: #000;
+}
+
+#calculator_section, #contact_section, #models_section, #profile_section, #model_detail_section {
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	height: auto;
+	background-color: #FFFFFF;
+	color: 000000;
+}
+
+.car_listing_models {
+	position: absolute;
+	padding-left: 450px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#see_more_button {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 0;
+}
+
+#model_description {
+	position: absolute;
+	bottom: 40px;
+	width: 970px;
+}
+
+#current_comment, #add_comment, #current_search, #search_friend {
+	border-radius: 0px;
+}
+
+.list-models, .list-contact {
+  	margin-top: 30px;
+  	border: 1px solid #CCCCCC;
+}
+
+.list-models > div, .list-contact > div {
+  	padding: 10px;
+  	border-bottom: 1px solid #ccc;
+}
+
+.list-models > div:last-child, .list-contact > div:last-child {
+  	border-bottom: none;
+}
+
+
+
+/* HOMEPAGE IMAGE GRID */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Get plan button */
+#get_plan_button {
+	position: absolute;
+	right:    0;
+	bottom:   2px;
+	border-radius:                    0px;
+	margin-right: 15px;
+}
+
+
+/* MODELS DETAILS */
+#x1_section, #x2_section, #x3_section {
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	height: auto;
+	background-color: #FFFFFF;
+	color: 000000;
+}
+
+
+/*MENU*/
+#menuOption {
+	padding-right: 40px;
+}
+
+
+/* INITIAL PAYMENT SLIDER */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#display_initial_payment {
+	font-size: 12.5px;
+}
+
+/* INDEX TITLE */
+#index_title {
+	position: absolute;
+	margin-left: 350px;
+	margin-top: 80px;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Georgia", Times, serif;
+}

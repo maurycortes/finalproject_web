@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> The Jammer </title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body id="models_body">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img class="navbar-brand" id="logo_image" src="img/marke-logo.png">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Marke</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"> <span id="slogan"> The best engineering </span> </a>
+						</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="homepage.html">Home</a>
+							</li>
+							<li class="nav-item active" id="menuOption">
+								<a class="nav-link" href="models.html">Models</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="calculator.html">Calculator</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="contact.html">Information</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="profile.html">My Profile</a>
+							</li>
+							<form class="form-inline my-2 my-lg-0">
+								<button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="signout_button" formaction="index.html"><i class="fas fa-sign-out-alt"></i></button>
+							</form>
+						</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="x1_section">
+				<form  method="post">
+					<div class="form-group mb-3 col-md-12">
+						<h4> X1 Model </h4>
+					</div>
+					<div class="form-group mb-2 col-md-12">
+						<div class="list-models" id="list-models"> <!--Append here the comments from AJAX-->
+
+							<div class="input-group" id="car1_detail" style="height: 720px;">
+								<div id="images-model">
+										<img src="img/x1-1.jpg" alt="X1" width="320" height="200">
+										<img src="img/x1-2.jpg" alt="X1" width="320" height="200">
+										<img src="img/x1-3.jpg" alt="X1" width="300" height="200">
+								</div>
+								<div id="model_description">
+									<table class="table">
+										<tbody>
+											<tr>
+													<th scope="row">Model</th><td>X1</td><th scope="row">Year</th><td>2019</td>
+											</tr>
+											<tr>
+													<th scope="row">Base Price</th><td>190,000</td><th scope="row">Motor</th><td>V4 2.0L</td>
+											</tr>
+											<tr>
+													<th scope="row">Seats Material</th><td>Fabric</td><th scope="row">Technology</th><td>Cruise Control</td>
+											</tr>
+											</tr>
+													<th scope="row">Wheels</th><td>17"</td><th scope="row">Sport Mode</th><td>No</td>
+											</tr>
+											<tr>
+													<th scope="row">Airbags</th><td>Yes</td><th scope="row">Sound</th><td>Sony Max Sound</td>
+											</tr>
+											<tr>
+													<th scope="row">Bluetooth</th><td>No</td><th scope="row">Parking Sensors</th><td>No</td>
+											</tr>
+											<tr>
+													<th scope="row">Personal Assistant</th><td>No</td><th scope="row">Automatic Windows</th><td>No</td>
+											</tr>
+											<tr>
+													<th scope="row">GPS</th><td>No</td><th scope="row">Automatic Parking</th><td>No</td>
+											</tr>
+											<tr>
+													<th scope="row">Number of seats</th><td>5</td><th scope="row">Number of doors</th><td>3</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+							<a href="calculator.html" id="see_more_button" class="btn btn-outline-info" name="see payment" value="calculator">See payment options</a>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

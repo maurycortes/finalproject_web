@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title> The Jammer </title>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/contact.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body id="contact_body">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<img class="navbar-brand" id="logo_image" src="img/marke-logo.png">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Marke</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"> <span id="slogan"> The best engineering </span> </a>
+						</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="homepage.html">Home</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="models.html">Models</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="calculator.html">Calculator</a>
+							</li>
+							<li class="nav-item active" id="menuOption">
+								<a class="nav-link" href="contact.html">Information</a>
+							</li>
+							<li class="nav-item" id="menuOption">
+								<a class="nav-link" href="profile.html">My Profile</a>
+							</li>
+							<form class="form-inline my-2 my-lg-0">
+								<button class="btn btn-outline-danger my-2 my-sm-0" type="submit" id="signout_button" formaction="index.html"><i class="fas fa-sign-out-alt"></i></button>
+							</form>
+						</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="contact_section">
+				<form  method="post">
+					<div class="form-group mb-3 col-md-12">
+						<h4 id="contact-info">Contact Information</h4>
+						<br>
+						<div class="list-contact-info"> <!--Append here the contact info from AJAX-->
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
